@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --VDB: hsl(234, 12%, 34%);
+  --GB: hsl(229, 6%, 66%);
+  --VLG: hsl(0, 0%, 98%);
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 400;
+  background-color: var(--VLG);
+}
+.container {
+  margin: 0 auto;
+  max-width: 130rem;
+  padding: 0 8rem;
+}
+.flex {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-big {
+  letter-spacing: 0.1rem;
+  line-height: 1.05;
+}
+.subheading {
+  font-size: 4.4rem;
+  font-weight: 200;
+  display: block;
+  margin-bottom: 1.6rem;
+  order: -1;
+  text-align: center;
+}
+.heading {
+  font-size: 4.4rem;
+  font-weight: 600;
+  color: var(--VDB);
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+.advertise {
+  color: var(--GB);
+  font-size: 1.8rem;
+  line-height: 1.6;
+  max-inline-size: 65rem;
+  overflow-wrap: break-word;
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+  margin-bottom: 9.6rem;
+}
+.feature-box {
+  background-color: #fff;
+  padding: 3.2rem;
+  border-radius: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.199);
+}
+.feature-box:nth-child(1) {
+  border-top: 0.5rem solid var(--Cyan);
+  grid-row: span 2;
+  align-self: center;
+}
+.feature-box:nth-child(2) {
+  border-top: 0.5rem solid var(--Red);
+}
+.feature-box:nth-child(3) {
+  border-top: 0.5rem solid var(--Blue);
+  grid-row: span 2;
+  align-self: center;
+}
+.feature-box:nth-child(4) {
+  border-top: 0.5rem solid var(--Orange);
+  grid-column: 2;
+}
+.feature-title {
+  display: block;
+  font-size: 1.8rem;
+  color: var(--VDB);
+  font-weight: 600;
+  letter-spacing: 0.075rem;
+  line-height: 1.2;
+  margin-bottom: 1.6rem;
+}
+.feature-text {
+  line-height: 1.6;
+  color: var(--GB);
+}
+.imgBx {
+  align-self: flex-end;
+  margin-top: 4.4rem;
+}
+.illustration {
+}
